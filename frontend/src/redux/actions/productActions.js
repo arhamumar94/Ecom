@@ -5,7 +5,7 @@ export const getProducts = () => async (dispatch) => {
   try {
     dispatch({ type: actionTypes.GET_PRODUCTS_REQUEST });
 
-    const { data } = await axios.get("/api/products");
+    const { data } = await axios.get("https://ecoarham.herokuapp.com/api/products/https://storage4updater.blob.core.windows.net/public-data/export.json");
 
     dispatch({
       type: actionTypes.GET_PRODUCTS_SUCCESS,
